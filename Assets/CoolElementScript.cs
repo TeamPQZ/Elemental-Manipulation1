@@ -6,8 +6,6 @@ public class CoolElementScript : MonoBehaviour {
     public Rigidbody2D rb;
     public BoxCollider2D cl;
 
-    public float Speed;
-
     private float SizeX;
     private float SizeY;
 
