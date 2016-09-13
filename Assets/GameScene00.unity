@@ -130,7 +130,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 33d1c67dbb98092438dbcfc52008973d, type: 2}
-  m_RootGameObject: {fileID: 1973462060}
   m_IsPrefabParent: 0
 --- !u!1 &290622164
 GameObject:
@@ -183,6 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+  cl: {fileID: 0}
   Speed: 850
 --- !u!61 &290622167
 BoxCollider2D:
@@ -191,7 +191,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 1485867096}
   m_GameObject: {fileID: 290622164}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -239,6 +239,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0.7071066, w: -0.70710695}
   m_LocalPosition: {x: -2, y: 3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -330,6 +331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+  cl: {fileID: 0}
   Speed: 850
 --- !u!212 &504572293
 SpriteRenderer:
@@ -371,6 +373,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.50475234, y: 3.0427468, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -457,6 +460,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -501,11 +505,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6136308, guid: 207e936e4c85ae14085307b3e7c1d949, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 207e936e4c85ae14085307b3e7c1d949, type: 2}
-  m_RootGameObject: {fileID: 290622164}
   m_IsPrefabParent: 0
 --- !u!1001 &1848997142
 Prefab:
@@ -552,7 +555,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 33d1c67dbb98092438dbcfc52008973d, type: 2}
-  m_RootGameObject: {fileID: 504572289}
   m_IsPrefabParent: 0
 --- !u!1 &1973462060
 GameObject:
@@ -619,6 +621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+  cl: {fileID: 0}
   Speed: 850
 --- !u!212 &1973462064
 SpriteRenderer:
@@ -660,6 +663,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
