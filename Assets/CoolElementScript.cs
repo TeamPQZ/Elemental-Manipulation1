@@ -29,11 +29,13 @@ public class CoolElementScript : MonoBehaviour {
         {
             //Bevæg til højre;
             RaycastHit2D R1;
-            R1 = Physics2D.Raycast(new Vector2(transform.position.x + (SizeX * 0.51f), transform.position.y + (SizeY * 0.45f)), Vector2.right, 0.48f);
+            R1 = Physics2D.Raycast(new Vector2(transform.position.x + (SizeX * 0.51f), transform.position.y + (SizeY * 0.45f)), Vector2.right, 0.45f);
             RaycastHit2D R2;
-            R2 = Physics2D.Raycast(new Vector2(transform.position.x + (SizeX * 0.51f), transform.position.y - (SizeY * 0.45f)), Vector2.right, 0.48f);
+            R2 = Physics2D.Raycast(new Vector2(transform.position.x + (SizeX * 0.51f), transform.position.y - (SizeY * 0.45f)), Vector2.right, 0.45f);
+            RaycastHit2D R3;
+            R3 = Physics2D.Raycast(new Vector2(transform.position.x + (SizeX * 0.51f), transform.position.y), Vector2.right, 0.45f);
 
-            if(R1.collider != null || R2.collider != null)
+            if (R1.collider != null || R2.collider != null || R3.collider != null)
             {
                 return;
             }
@@ -46,11 +48,13 @@ public class CoolElementScript : MonoBehaviour {
         {
             //Bevæg til venstre;
             RaycastHit2D L1;
-            L1 = Physics2D.Raycast(new Vector2(transform.position.x - (SizeX * 0.51f), transform.position.y + (SizeY * 0.45f)), Vector2.left, 0.48f);
+            L1 = Physics2D.Raycast(new Vector2(transform.position.x - (SizeX * 0.51f), transform.position.y + (SizeY * 0.45f)), Vector2.left, 0.45f);
             RaycastHit2D L2;
-            L2 = Physics2D.Raycast(new Vector2(transform.position.x - (SizeX * 0.51f), transform.position.y - (SizeY * 0.45f)), Vector2.left, 0.48f);
+            L2 = Physics2D.Raycast(new Vector2(transform.position.x - (SizeX * 0.51f), transform.position.y - (SizeY * 0.45f)), Vector2.left, 0.45f);
+            RaycastHit2D L3;
+            L3 = Physics2D.Raycast(new Vector2(transform.position.x - (SizeX * 0.51f), transform.position.y), Vector2.left, 0.45f);
 
-            if (L1.collider != null || L2.collider != null)
+            if (L1.collider != null || L2.collider != null || L3.collider != null)
             {
                 return;
             }
@@ -63,11 +67,12 @@ public class CoolElementScript : MonoBehaviour {
         {
             //Bevæg op;
             RaycastHit2D U1;
-            U1 = Physics2D.Raycast(new Vector2(transform.position.x + (SizeX * 0.45f), transform.position.y + (SizeY * 0.51f)), Vector2.up, 0.48f);
+            U1 = Physics2D.Raycast(new Vector2(transform.position.x + (SizeX * 0.45f), transform.position.y + (SizeY * 0.51f)), Vector2.up, 0.45f);
             RaycastHit2D U2;
-            U2 = Physics2D.Raycast(new Vector2(transform.position.x - (SizeX * 0.45f), transform.position.y + (SizeY * 0.51f)), Vector2.up, 0.48f);
-
-            if (U1.collider != null || U2.collider != null)
+            U2 = Physics2D.Raycast(new Vector2(transform.position.x - (SizeX * 0.45f), transform.position.y + (SizeY * 0.51f)), Vector2.up, 0.45f);
+            RaycastHit2D U3;
+            U3 = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y + SizeY * 0.51f), Vector2.up, 0.45f);
+            if (U1.collider != null || U2.collider != null || U3.collider != null)
             {
                 return;
             }
@@ -80,11 +85,13 @@ public class CoolElementScript : MonoBehaviour {
         {
             //Bevæg ned;
             RaycastHit2D D1;
-            D1 = Physics2D.Raycast(new Vector2(transform.position.x + (SizeX * 0.45f), transform.position.y - (SizeY * 0.51f)), Vector2.down, 0.48f);
+            D1 = Physics2D.Raycast(new Vector2(transform.position.x + (SizeX * 0.45f), transform.position.y - (SizeY * 0.51f)), Vector2.down, 0.45f);
             RaycastHit2D D2;
-            D2 = Physics2D.Raycast(new Vector2(transform.position.x - (SizeX * 0.45f), transform.position.y - (SizeY * 0.51f)), Vector2.down, 0.48f);
+            D2 = Physics2D.Raycast(new Vector2(transform.position.x - (SizeX * 0.45f), transform.position.y - (SizeY * 0.51f)), Vector2.down, 0.45f);
+            RaycastHit2D D3;
+            D3 = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - SizeY * 0.51f), Vector2.down, 0.45f);
 
-            if (D1.collider != null || D2.collider != null)
+            if (D1.collider != null || D2.collider != null || D3.collider != null)
             {
                 return;
             }
